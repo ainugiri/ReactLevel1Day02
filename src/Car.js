@@ -1,5 +1,6 @@
 function Car(){
     return (
+
         <>
             <h2>Car</h2>
             <p>It's a car</p>

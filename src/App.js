@@ -5,6 +5,7 @@ import Order from './Order';
 import SimpleCC from './SimpleCC';
 import Products from './Products';
 import IncrComponent from './IncrComponent';
+import StatePlus from './StatePlus';  
 function Cycle(){
     return (
         <>
@@ -36,7 +37,7 @@ function App() {
 
         <Products data = {data}/>
       <IncrComponent />
-        
+      <StatePlus />        
     </div>
   );
 }
