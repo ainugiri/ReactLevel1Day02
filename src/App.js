@@ -3,7 +3,8 @@ import './App.css';
 import {Car, Bike} from './Car';
 import Order from './Order';
 import SimpleCC from './SimpleCC';
-
+import Products from './Products';
+import IncrComponent from './IncrComponent';
 function Cycle(){
     return (
         <>
@@ -19,7 +20,8 @@ function Cycle(){
 }
 
 function App() {
-  const items = ['Apple', 'Banana', 'Cherry', 'Dates'];
+  const items = ['Apple', 'HP Laptop', 'Laptop Bag', 'Mouse', 'Keyboard', 'Monitor'];
+  const data = ['BMW', 'Audi', 'Mercedes'];
   return (
     <div>
       <header className="App-header">
@@ -27,11 +29,14 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
       </header>
-        <Order ItemName ='iPhone'/>
-        <Order ItemName ='HP Laptop'/>
-        <Order ItemName ='Laptop Bag'/>
-        <Order ItemName ='Mouse'/>
-        <SimpleCC UserName='John'/>
+
+        <SimpleCC UserName="Giri Prasad" />
+        <Car />
+        <Order items={items} />
+
+        <Products data = {data}/>
+      <IncrComponent />
+        
     </div>
   );
 }
